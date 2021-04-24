@@ -1,0 +1,469 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'it' Physical Memory: 32697 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Desktop/RPG/RPG
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59827
+Successfully changed project path to: E:/Desktop/RPG/RPG
+E:/Desktop/RPG/RPG
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 42.94 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Desktop/RPG/RPG/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   27.21.14.6172
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002616 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.291 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001039 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 35.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.953 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1808 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.7 MB.
+System memory in use after: 84.8 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2255.
+Total: 1.774300 ms (FindLiveObjects: 0.251500 ms CreateObjectMapping: 0.107700 ms MarkObjects: 1.357300 ms  DeleteObjects: 0.056000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '025e4f587c23674256bb898581e82961') in 0.099380 seconds
+  Import took 0.101921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.869386 seconds.
+  path: Assets/Asset
+  artifactKey: Guid(277754e73b927404bba4da3aaad436cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset using Guid(277754e73b927404bba4da3aaad436cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd3304195ecba345c0ddfbe24c66357') in 0.002102 seconds
+  Import took 0.004462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.077138 seconds.
+  path: Assets/Asset/BG.png
+  artifactKey: Guid(551f7e4bff70108469c0c2cb88e945fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/BG.png using Guid(551f7e4bff70108469c0c2cb88e945fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfc0c558632610b849c01183869bbd4') in 0.176883 seconds
+  Import took 0.182284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Asset/character.png
+  artifactKey: Guid(3159679f88414f0409e1671ad33983e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/character.png using Guid(3159679f88414f0409e1671ad33983e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8168ee056bb4264f3120d333cbfcd8') in 0.039363 seconds
+  Import took 0.044313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003091 seconds.
+  path: Assets/Asset/character.png
+  artifactKey: Guid(3159679f88414f0409e1671ad33983e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/character.png using Guid(3159679f88414f0409e1671ad33983e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa8168ee056bb4264f3120d333cbfcd8') in 0.034409 seconds
+  Import took 0.041840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.730754 seconds.
+  path: Assets/Asset/Udemy RPG Assets.unitypackage
+  artifactKey: Guid(40822fc3d6411f9489cc3b44dfa80d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset/Udemy RPG Assets.unitypackage using Guid(40822fc3d6411f9489cc3b44dfa80d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e0af71e0c383689d0823f573fab22f3') in 0.006144 seconds
+  Import took 0.009419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 876.767473 seconds.
+  path: Assets/Udemy RPG Assets/Licence.txt
+  artifactKey: Guid(a6910b89779f96344a9d69933ce13e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Licence.txt using Guid(a6910b89779f96344a9d69933ce13e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fce7eb9e399e7ce512c1503bb4a67db') in 0.007808 seconds
+  Import took 0.032426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.484053 seconds.
+  path: Assets/Udemy RPG Assets/Art
+  artifactKey: Guid(b56a402e5850ab14c92616d1f0d5bf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art using Guid(b56a402e5850ab14c92616d1f0d5bf8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91fd4bb073001735f0b37756bb44a4d9') in 0.001711 seconds
+  Import took 0.030125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.082580 seconds.
+  path: Assets/Udemy RPG Assets/Art/Battle Bosses.png
+  artifactKey: Guid(dd61146dbe36aa6449131fb544979165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Battle Bosses.png using Guid(dd61146dbe36aa6449131fb544979165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3284e41c8d5d5131b82a71f77ed61a2') in 0.016177 seconds
+  Import took 0.027651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Udemy RPG Assets/Art/Items.png
+  artifactKey: Guid(0bc4ed27aef38a44bb72e80f9beb5326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Items.png using Guid(0bc4ed27aef38a44bb72e80f9beb5326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '490caf69c78df1db4ed7ac42552ec10d') in 0.018879 seconds
+  Import took 0.024133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Udemy RPG Assets/Art/NPC Characters.png
+  artifactKey: Guid(fb8cc55af4b7a034584793949fd90500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/NPC Characters.png using Guid(fb8cc55af4b7a034584793949fd90500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fe8c170047e803bff9c82825d5d5e7') in 0.009792 seconds
+  Import took 0.012527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Udemy RPG Assets/Art/BG2.png
+  artifactKey: Guid(ac1b134abac16df4e8cbb927369f7b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/BG2.png using Guid(ac1b134abac16df4e8cbb927369f7b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405491f59570281815e49eaf1161a892') in 0.015927 seconds
+  Import took 0.029457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Udemy RPG Assets/Art/Battle Enemies.png
+  artifactKey: Guid(988d560df8d322a468c97243cbfd76e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Battle Enemies.png using Guid(988d560df8d322a468c97243cbfd76e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2638a7ffa47587f458f7f47bb6d236') in 0.039087 seconds
+  Import took 0.042416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.819925 seconds.
+  path: Assets/Udemy RPG Assets/Art/Effects
+  artifactKey: Guid(83a9ba5c3f0328e44a6a4b07424afa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Effects using Guid(83a9ba5c3f0328e44a6a4b07424afa1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fca9d3928225c30fb202def4f0b2892') in 0.001964 seconds
+  Import took 0.017433 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.374811 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998
+  artifactKey: Guid(c56770f00164bb64a9ee4e332663f25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998 using Guid(c56770f00164bb64a9ee4e332663f25b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc322645c533f74370c38309497a5bf0') in 0.002340 seconds
+  Import took 0.005135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.054187 seconds.
+  path: Assets/Udemy RPG Assets/Art/UI
+  artifactKey: Guid(4fba08ef3410e104eba88785ab0726aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/UI using Guid(4fba08ef3410e104eba88785ab0726aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8ecc7ba6b5bdafe97fad22ef55f77d') in 0.002135 seconds
+  Import took 0.004488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.459191 seconds.
+  path: Assets/Udemy RPG Assets/Fonts/Pixelnauts.ttf
+  artifactKey: Guid(416767b5bbdb3e24e8f385bece614050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Fonts/Pixelnauts.ttf using Guid(416767b5bbdb3e24e8f385bece614050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50342693d2784a6204edf1bd8ae4546') in 0.047592 seconds
+  Import took 0.050043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.397691 seconds.
+  path: Assets/Udemy RPG Assets/Audio/SFX
+  artifactKey: Guid(8c978d20fe98cec4488e9da6cd236186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/SFX using Guid(8c978d20fe98cec4488e9da6cd236186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b922cf2d52e10dfe4df5941ee065ad') in 0.002028 seconds
+  Import took 0.011279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.529087 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music
+  artifactKey: Guid(2f9bae84e195bd643bd2015aec7140ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music using Guid(2f9bae84e195bd643bd2015aec7140ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799b6f6977045fbc15a51d80c1e6a636') in 0.001796 seconds
+  Import took 0.004150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074183 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/Battle - battleThemeA.mp3
+  artifactKey: Guid(aa23ccecf7afed84992344037b2d727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/Battle - battleThemeA.mp3 using Guid(aa23ccecf7afed84992344037b2d727f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ff6e3436c773be86c5616cb06b2327') in 0.018029 seconds
+  Import took 0.024917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/Title - Home Town.ogg
+  artifactKey: Guid(9b48087921594f549b905f28bcae1ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/Title - Home Town.ogg using Guid(9b48087921594f549b905f28bcae1ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f326f7000b7152c6c56e3363824b5690') in 0.128021 seconds
+  Import took 0.140996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/Victory - fanfare.ogg
+  artifactKey: Guid(a592b59783305bb418cb9753c57d0e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/Victory - fanfare.ogg using Guid(a592b59783305bb418cb9753c57d0e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7594c5aba2cbbb33ccd9d0698a74836') in 0.009981 seconds
+  Import took 0.015163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/Dungeon - Whispers From Beyond.ogg
+  artifactKey: Guid(46fafbff8fcd05144944f2b2e3d7c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/Dungeon - Whispers From Beyond.ogg using Guid(46fafbff8fcd05144944f2b2e3d7c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1bcb6c48fa8e7b927464a8558bd3533') in 0.009708 seconds
+  Import took 0.016610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/Country - Grasslands.ogg
+  artifactKey: Guid(8843251b5a165c94bb97486035d025e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/Country - Grasslands.ogg using Guid(8843251b5a165c94bb97486035d025e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e685c351b2b65ef1d079ff78711432cd') in 0.017367 seconds
+  Import took 0.021905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/town - Sunshine Coast.ogg
+  artifactKey: Guid(ddc10b3bc71a8424e8a206b496f69df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/town - Sunshine Coast.ogg using Guid(ddc10b3bc71a8424e8a206b496f69df6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85562788bd717196e5017372e1fefe11') in 0.016835 seconds
+  Import took 0.020998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Udemy RPG Assets/Audio/Music/Boss - Encounter With The Witches.ogg
+  artifactKey: Guid(ffb327a0787d6b54482d9da356348f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Audio/Music/Boss - Encounter With The Witches.ogg using Guid(ffb327a0787d6b54482d9da356348f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd047dc31e0169d3802d3096161b0e6c') in 0.007895 seconds
+  Import took 0.034954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.968743 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds
+  artifactKey: Guid(bb40847a296d3c9448adabae88ea6b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds using Guid(bb40847a296d3c9448adabae88ea6b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ddece0a85261ddeff8e61d8d8f3a75') in 0.002169 seconds
+  Import took 0.004993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080518 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback cave.png
+  artifactKey: Guid(16af20c94d442ab4c8bff6c6a7d1885f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback cave.png using Guid(16af20c94d442ab4c8bff6c6a7d1885f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f916fd1ecbcf6eaafedc0b01b2f806') in 0.017722 seconds
+  Import took 0.020239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback sand village.png
+  artifactKey: Guid(2e06601d6168a084ca42ab37136eda4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback sand village.png using Guid(2e06601d6168a084ca42ab37136eda4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a378e850a8230a5259102708bafb78d') in 0.009428 seconds
+  Import took 0.011724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback snow.png
+  artifactKey: Guid(bc1d0034ebff3f149b28b486f3ed6e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback snow.png using Guid(bc1d0034ebff3f149b28b486f3ed6e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe7c165568f6a0a477e26d712f5e763') in 0.009085 seconds
+  Import took 0.012397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback forest.png
+  artifactKey: Guid(4c38a2b9041c88748add8abf7c31433c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback forest.png using Guid(4c38a2b9041c88748add8abf7c31433c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a3f8b6d329e3af260c04246a8a6d0d0') in 0.017425 seconds
+  Import took 0.020084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000330 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback forest autumn.png
+  artifactKey: Guid(cbcfabd2b8025a84e92038a5857666a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback forest autumn.png using Guid(cbcfabd2b8025a84e92038a5857666a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1479bfc85454dc8ff92db1be8279b9d3') in 0.010969 seconds
+  Import took 0.019391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback country.png
+  artifactKey: Guid(d330684629bb9cd4daa49df8677ff91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback country.png using Guid(d330684629bb9cd4daa49df8677ff91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32852c53edc2305fabd1c60485d4c2b') in 0.009540 seconds
+  Import took 0.012026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback dungeon.png
+  artifactKey: Guid(dfce6b7656338c244aefe65269df8585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback dungeon.png using Guid(dfce6b7656338c244aefe65269df8585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e77989fd61bca03bfcc41a067dd147b6') in 0.009935 seconds
+  Import took 0.012888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback forest red.png
+  artifactKey: Guid(fe82c5ed8f6ff8845be710646b0d6f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback forest red.png using Guid(fe82c5ed8f6ff8845be710646b0d6f78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648acb77b3c504fc60bc30a4781dc4d0') in 0.009533 seconds
+  Import took 0.019452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback mine.png
+  artifactKey: Guid(b60ffdbe9b35615459dc41ae9b627ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback mine.png using Guid(b60ffdbe9b35615459dc41ae9b627ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1202d69adef71566434411916ea6f9') in 0.015340 seconds
+  Import took 0.021470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Udemy RPG Assets/Art/Backgrounds/battleback sand.png
+  artifactKey: Guid(92609e186aa6f9347a6513f9b7766702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/Backgrounds/battleback sand.png using Guid(92609e186aa6f9347a6513f9b7766702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b14cb089997d809dea5d5d6ac884f79') in 0.012664 seconds
+  Import took 0.017853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.383105 seconds.
+  path: Assets/Udemy RPG Assets/Art/UI/Battle_Panel.png
+  artifactKey: Guid(008b65da93878d24398fdc836e444766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/UI/Battle_Panel.png using Guid(008b65da93878d24398fdc836e444766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f2fca5d64b964472e170ca2a893932') in 0.006712 seconds
+  Import took 0.009079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Udemy RPG Assets/Art/UI/Item Frame.png
+  artifactKey: Guid(730d492efa8d6944194f432cbb9eeef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/UI/Item Frame.png using Guid(730d492efa8d6944194f432cbb9eeef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4fd39b9c1528eaa0417fbd3386be941') in 0.007323 seconds
+  Import took 0.034763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/Udemy RPG Assets/Art/UI/Panel.png
+  artifactKey: Guid(afe4fb6836b063346b1702757681eacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/UI/Panel.png using Guid(afe4fb6836b063346b1702757681eacd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e15f054c9b6894e017f0923455341bf') in 0.008458 seconds
+  Import took 0.010842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Udemy RPG Assets/Art/UI/Button.png
+  artifactKey: Guid(84b3bb40ee35ce74c8a8f5850dd74a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/UI/Button.png using Guid(84b3bb40ee35ce74c8a8f5850dd74a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f9da1e72f62cffd37ded9648bb08b0') in 0.008723 seconds
+  Import took 0.011660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.374969 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/cave.png
+  artifactKey: Guid(ca59c4b6a65722e428ea4e21db6ee8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/cave.png using Guid(ca59c4b6a65722e428ea4e21db6ee8da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cee978783254c1acd5d7a87fff39fda') in 0.008741 seconds
+  Import took 0.011104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Inner.png
+  artifactKey: Guid(8b65a770ed12f0b419cb38759dbe1088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Inner.png using Guid(8b65a770ed12f0b419cb38759dbe1088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d6d8a8f9b3365be881a6adc3d9a81c') in 0.005269 seconds
+  Import took 0.013955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Overworld_Padded.png
+  artifactKey: Guid(af6bc9dfbb9b08e4890cf8e4b8dd00c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Overworld_Padded.png using Guid(af6bc9dfbb9b08e4890cf8e4b8dd00c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd029944b1d9a61f5ce4e2d333d08124a') in 1.053977 seconds
+  Import took 1.075273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/cave_Padded.png
+  artifactKey: Guid(3f51af3ade8505048a57a9928a2d2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/cave_Padded.png using Guid(3f51af3ade8505048a57a9928a2d2971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac65efdb0be035db82e4a8a7f3886117') in 0.109161 seconds
+  Import took 0.117113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/log.png
+  artifactKey: Guid(e0ddba6d3fcf21f49949fcc95c849aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/log.png using Guid(e0ddba6d3fcf21f49949fcc95c849aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e560a2585a22b895b7a39ae9a28ecc4') in 0.029640 seconds
+  Import took 0.032212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Inner_Padded.png
+  artifactKey: Guid(1c6d3937a6785fd48aacd0d71d6f8c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Inner_Padded.png using Guid(1c6d3937a6785fd48aacd0d71d6f8c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5082683ae37079967f6e312c5e0ebaa') in 0.227523 seconds
+  Import took 0.230513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Overworld.png
+  artifactKey: Guid(9589500635eeaef4fa211db6fa452780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/Overworld.png using Guid(9589500635eeaef4fa211db6fa452780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9088f87dccc9224a9a7cfda27d31a80') in 0.909761 seconds
+  Import took 0.920322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/objects.png
+  artifactKey: Guid(6dcb1eb4562a65148931fea6691976d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/objects.png using Guid(6dcb1eb4562a65148931fea6691976d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed523081cd05f97019d75298204e452') in 0.006104 seconds
+  Import took 0.012290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Udemy RPG Assets/Art/gfx by ArMM1998/objects_Padded.png
+  artifactKey: Guid(88ae461370fb3334d8f7009dad27cd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Udemy RPG Assets/Art/gfx by ArMM1998/objects_Padded.png using Guid(88ae461370fb3334d8f7009dad27cd8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41959f091eb974093926c5ecfbf02d38') in 0.487557 seconds
+  Import took 0.503079 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
