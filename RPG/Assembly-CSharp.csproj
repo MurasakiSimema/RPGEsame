@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ToArea.cs" />
+    <Compile Include="Assets\Scripts\FromArea.cs" />
+    <Compile Include="Assets\Scripts\PlayerLoader.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />

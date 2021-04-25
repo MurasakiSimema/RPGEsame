@@ -8,10 +8,21 @@ public class PlayerController : MonoBehaviour
     public float MoveSpeed;
 
     public Animator Animator;
+
+    public static PlayerController instance;
+
+
+    public string AreaTransitionName;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
