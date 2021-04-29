@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class ToArea : MonoBehaviour
 {
     public string Area;
-    public string AreaTransitionName;
+    public string areaTransitionName;
 
     public FromArea Entrance;
 
     // Start is called before the first frame update
     void Start()
     {
-        Entrance.TransitionName = AreaTransitionName;
+        Entrance.transitionName = areaTransitionName;
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class ToArea : MonoBehaviour
         {
             SceneManager.LoadScene(Area);
 
-            PlayerController.instance.AreaTransitionName = AreaTransitionName;
+            PlayerController.instance.areaTransitionName = areaTransitionName;
         }
     }
 }

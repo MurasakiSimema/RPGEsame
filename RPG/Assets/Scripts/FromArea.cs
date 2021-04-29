@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class FromArea : MonoBehaviour
 {
-    public string TransitionName;
+    public string transitionName;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (TransitionName == PlayerController.instance.AreaTransitionName)
+        if (transitionName == PlayerController.instance.areaTransitionName)
             PlayerController.instance.transform.position = transform.position;       
     }
 

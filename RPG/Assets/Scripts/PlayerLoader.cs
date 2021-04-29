@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerLoader : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject Player;
+    public GameObject player;
     void Start()
     {
         if (PlayerController.instance == null)
-            Instantiate(Player);
+            Instantiate(player);
     }
 
     // Update is called once per frame

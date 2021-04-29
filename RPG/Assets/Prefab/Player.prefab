@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca759cd39bd7f44cb68aab9cd374502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RigidBody: {fileID: 276109250118700679}
-  MoveSpeed: 5
-  Animator: {fileID: 276109250118700672}
-  AreaTransitionName: Start
+  rigidBody: {fileID: 276109250118700679}
+  moveSpeed: 0
+  animator: {fileID: 276109250118700672}
+  areaTransitionName: 
 --- !u!95 &276109250118700672
 Animator:
   serializedVersion: 3

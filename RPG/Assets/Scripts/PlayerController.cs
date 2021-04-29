@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D RigidBody;
-    public float MoveSpeed;
+    public Rigidbody2D rigidBody;
+    public float moveSpeed;
 
-    public Animator Animator;
+    public Animator animator;
 
     public static PlayerController instance;
 
 
-    public string AreaTransitionName;
+    public string areaTransitionName;
 
     // Start is called before the first frame update
     void Start()
@@ -28,15 +28,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * MoveSpeed;
+        rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
-        Animator.SetFloat("MoveX", RigidBody.velocity.x);
-        Animator.SetFloat("MoveY", RigidBody.velocity.y);
+        animator.SetFloat("MoveX", rigidBody.velocity.x);
+        animator.SetFloat("MoveY", rigidBody.velocity.y);
 
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
-            Animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
-            Animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+            animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+            animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
         }
     }
 }
