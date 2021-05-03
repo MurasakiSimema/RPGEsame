@@ -8,12 +8,12 @@ public class ToArea : MonoBehaviour
     public string Area;
     public string areaTransitionName;
 
-    public FromArea Entrance;
+    //public FromArea Entrance;
 
     // Start is called before the first frame update
     void Start()
     {
-        Entrance.transitionName = areaTransitionName;
+        //Entrance.transitionName = areaTransitionName;
     }
 
     // Update is called once per frame
