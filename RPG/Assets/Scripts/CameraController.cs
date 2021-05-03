@@ -11,13 +11,27 @@ public class CameraController : MonoBehaviour
     private Vector3 bottomLeft;
     private Vector3 topRight;
 
+    private float halfHeight;
+    private float halfWidth;
+
     // Start is called before the first frame update
     void Start()
     {
         subject = PlayerController.instance.transform;
 
-        bottomLeft = map.localBounds.min;
-        topRight = map.localBounds.max;
+        halfHeight = Camera.main.orthographicSize;
+        halfWidth = halfHeight * Camera.main.aspect;
+
+        if (map.size.x > halfWidth * 2 && map.size.y > halfHeight * 2) 
+        {
+            bottomLeft = map.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
+            topRight = map.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
+        }
+        else
+        {
+            bottomLeft = map.localBounds.min;
+            topRight = map.localBounds.max;
+        }
     }
 
     // LateUpdate is called after frame
