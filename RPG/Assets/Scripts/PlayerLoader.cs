@@ -8,7 +8,7 @@ public class PlayerLoader : MonoBehaviour
     public GameObject player;
     void Start()
     {
-        if (PlayerController.instance == null)
+        if (PlayerController.instance == null)          //Se non esiste già un player
             Instantiate(player);
     }
 

@@ -10,6 +10,7 @@ public class CameraController : MonoBehaviour
     public Tilemap map;
     private Vector3 bottomLeft;
     private Vector3 topRight;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class CameraController : MonoBehaviour
         topRight = map.localBounds.max;
     }
 
-    // Update is called after frame
+    // LateUpdate is called after frame
     void LateUpdate()
     {
         //transform.position = new Vector3(subject.position.x, subject.position.y, transform.position.z);

@@ -9,7 +9,7 @@ public class FromArea : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (transitionName == PlayerController.instance.areaTransitionName)
+        if (transitionName == PlayerController.instance.areaTransitionName)         // Se il player arriva dalla scena giusta
             PlayerController.instance.transform.position = transform.position;       
     }
 

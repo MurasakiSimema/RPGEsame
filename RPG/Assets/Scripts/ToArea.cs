@@ -22,13 +22,13 @@ public class ToArea : MonoBehaviour
         
     }
 
+    // OnTriggerEnter2D is called when a collision happens
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "Player")                                              // Se la collisione è con il player
         {
-            SceneManager.LoadScene(Area);
-
-            PlayerController.instance.areaTransitionName = areaTransitionName;
+            SceneManager.LoadScene(Area);                                           
+            PlayerController.instance.areaTransitionName = areaTransitionName;      
         }
     }
 }
