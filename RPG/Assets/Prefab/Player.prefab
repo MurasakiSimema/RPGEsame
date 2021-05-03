@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidBody: {fileID: 276109250118700679}
-  moveSpeed: 0
+  moveSpeed: 7
   animator: {fileID: 276109250118700672}
   areaTransitionName: 
 --- !u!95 &276109250118700672

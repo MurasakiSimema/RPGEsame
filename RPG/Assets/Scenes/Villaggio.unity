@@ -4410,7 +4410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2457473724472526151, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
       propertyPath: m_Name
-      value: ToArea
+      value: ToPercorso1
       objectReference: {fileID: 0}
     - target: {fileID: 2457473724925007914, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4606,6 +4606,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8824d645b551b4b97e656b764a67cf, type: 3}
+--- !u!1001 &653549612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2457473724472526146, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: Area
+      value: Negozio
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526146, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: areaTransitionName
+      value: VillaggioToNegozio
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526149, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724472526151, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_Name
+      value: ToNegozio
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724925007914, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724925007914, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457473724925007917, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
+      propertyPath: transitionName
+      value: NegozioToVillaggio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad554d77a2f449a48ae6ba023f8e3288, type: 3}
 --- !u!1 &715819046
 GameObject:
   m_ObjectHideFlags: 0

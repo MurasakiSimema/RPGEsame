@@ -22,8 +22,7 @@ public class CameraController : MonoBehaviour
     // Update is called after frame
     void LateUpdate()
     {
-        transform.position = new Vector3(subject.position.x, subject.position.y, transform.position.z);
-
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeft.x, topRight.x), Mathf.Clamp(transform.position.y, bottomLeft.y, topRight.y), transform.position.z);
+        //transform.position = new Vector3(subject.position.x, subject.position.y, transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(subject.position.x, bottomLeft.x, topRight.x), Mathf.Clamp(subject.position.y, bottomLeft.y, topRight.y), transform.position.z);
     }
 }
