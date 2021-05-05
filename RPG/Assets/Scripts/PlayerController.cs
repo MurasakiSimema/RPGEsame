@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
 
     public string areaTransitionName;
+    private Vector3 bottomLeftLimit;
+    private Vector3 topRightLimit;
 
     // Start is called before the first frame update
     void Start()
@@ -38,5 +40,12 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
             animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
         }
+
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+    }
+
+    public void SetBounds(Vector3 bottomLeft, Vector3 topRight){
+        bottomLeftLimit = bottomLeft + new Vector3(1f, 1f, 0f);
+        topRightLimit = topRight + new Vector3(-1f, -1f, 0f);
     }
 }

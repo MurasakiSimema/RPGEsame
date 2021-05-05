@@ -32,6 +32,8 @@ public class CameraController : MonoBehaviour
             bottomLeft = map.localBounds.min;
             topRight = map.localBounds.max;
         }
+
+        PlayerController.instance.SetBounds(map.localBounds.min, map.localBounds.max);
     }
 
     // LateUpdate is called after frame
