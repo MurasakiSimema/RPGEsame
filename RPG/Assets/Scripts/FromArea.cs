@@ -10,7 +10,9 @@ public class FromArea : MonoBehaviour
     void Start()
     {
         if (transitionName == PlayerController.instance.areaTransitionName)         // Se il player arriva dalla scena giusta
-            PlayerController.instance.transform.position = transform.position;       
+            PlayerController.instance.transform.position = transform.position;
+
+        UIFade.instance.FadeFromBlack();
     }
 
     // Update is called once per frame

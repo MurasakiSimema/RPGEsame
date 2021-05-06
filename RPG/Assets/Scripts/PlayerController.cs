@@ -22,7 +22,10 @@ public class PlayerController : MonoBehaviour
         if (instance == null)               // Se non esiste già un player
             instance = this;
         else
-            Destroy(gameObject);
+        {
+            if (instance != this)
+                Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(gameObject);      // Non distruggere al cambio scena
     }

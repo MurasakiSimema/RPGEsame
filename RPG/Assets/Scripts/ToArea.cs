@@ -9,6 +9,8 @@ public class ToArea : MonoBehaviour
     public string areaTransitionName;
 
     //public FromArea Entrance;
+    public float waitToLoad = 1f;
+    private bool shouldLoadAfterFade;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,15 @@ public class ToArea : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (shouldLoadAfterFade)
+        {
+            waitToLoad -= Time.deltaTime;
+            if(waitToLoad <= 0)
+            {
+                shouldLoadAfterFade = false;
+                SceneManager.LoadScene(Area);
+            }
+        }
     }
 
     // OnTriggerEnter2D is called when a collision happens
@@ -27,7 +37,9 @@ public class ToArea : MonoBehaviour
     {
         if (collision.tag == "Player")                                              // Se la collisione è con il player
         {
-            SceneManager.LoadScene(Area);                                           
+            //SceneManager.LoadScene(Area);
+            shouldLoadAfterFade = true;
+            UIFade.instance.FadeToBlack();
             PlayerController.instance.areaTransitionName = areaTransitionName;      
         }
     }
