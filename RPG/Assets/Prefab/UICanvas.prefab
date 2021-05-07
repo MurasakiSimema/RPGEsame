@@ -154,7 +154,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Asuka
+  m_Text: Name
 --- !u!1 &2233928869214158855
 GameObject:
   m_ObjectHideFlags: 0

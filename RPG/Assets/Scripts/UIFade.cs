@@ -32,7 +32,10 @@ public class UIFade : MonoBehaviour
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
             if (fadeScreen.color.a == 0)
+            {
                 shouldFadeFromBlack = false;
+                PlayerController.instance.canMove = true;
+            }
         }
     }
 
@@ -40,6 +43,7 @@ public class UIFade : MonoBehaviour
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
+        PlayerController.instance.canMove = false;
     }
     public void FadeFromBlack()
     {

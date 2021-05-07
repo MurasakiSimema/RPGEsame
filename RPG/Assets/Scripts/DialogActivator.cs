@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogActivator : MonoBehaviour
 {
     public string[] dialog;
+    public bool isPerson = true;
 
     private bool canActivate;
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (canActivate && Input.GetButtonDown("Jump") && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
-            DialogManager.instance.ShowDialog(dialog);
+            DialogManager.instance.ShowDialog(dialog, isPerson);
         }
     }
 

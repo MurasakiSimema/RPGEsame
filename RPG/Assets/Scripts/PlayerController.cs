@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public Rigidbody2D rigidBody;
-    public float moveSpeed;
-
-    public Animator animator;
-
     public static PlayerController instance;
 
+    public Rigidbody2D rigidBody;
+    public float moveSpeed;
+    public bool canMove = true;
+    public Animator animator;
 
     public string areaTransitionName;
     private Vector3 bottomLeftLimit;
@@ -33,15 +32,24 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+        if (canMove)
+        {
+            rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
-        animator.SetFloat("MoveX", rigidBody.velocity.x);
-        animator.SetFloat("MoveY", rigidBody.velocity.y);
+            animator.SetFloat("MoveX", rigidBody.velocity.x);
+            animator.SetFloat("MoveY", rigidBody.velocity.y);
+        }
+        else
+            rigidBody.velocity = Vector2.zero;
+
 
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
-            animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
-            animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+            if (canMove)
+            {
+                animator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+                animator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+            }
         }
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
