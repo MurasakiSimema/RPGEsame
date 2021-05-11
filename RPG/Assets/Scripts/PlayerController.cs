@@ -33,15 +33,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (canMove)
-        {
             rigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
-
-            animator.SetFloat("MoveX", rigidBody.velocity.x);
-            animator.SetFloat("MoveY", rigidBody.velocity.y);
-        }
         else
             rigidBody.velocity = Vector2.zero;
 
+        animator.SetFloat("MoveX", rigidBody.velocity.x);
+        animator.SetFloat("MoveY", rigidBody.velocity.y);
 
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {

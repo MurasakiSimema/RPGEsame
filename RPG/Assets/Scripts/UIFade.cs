@@ -34,7 +34,7 @@ public class UIFade : MonoBehaviour
             if (fadeScreen.color.a == 0)
             {
                 shouldFadeFromBlack = false;
-                PlayerController.instance.canMove = true;
+                GameManager.instance.fadingArea = false;
             }
         }
     }
@@ -43,7 +43,7 @@ public class UIFade : MonoBehaviour
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
-        PlayerController.instance.canMove = false;
+        GameManager.instance.fadingArea = true;
     }
     public void FadeFromBlack()
     {
