@@ -7,7 +7,13 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public CharStats[] playerStats;
+    
     public bool gameMenuOpen, dialogActive, fadingArea;
+
+    public string[] itemHeld;
+    public int[] numberOfItems;
+    public List<Item> referenceItem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,5 +29,33 @@ public class GameManager : MonoBehaviour
             PlayerController.instance.canMove = false;
         else
             PlayerController.instance.canMove = true;
+    }
+
+    public Item GetItem(string itemToGrab)
+    {
+        return referenceItem.Find(item => item.itemName == itemToGrab); ;
+    }
+
+    public void SortItems()
+    {
+        bool itemAfterSpace;
+
+        do
+        {
+            itemAfterSpace = false;
+            for (int i = 0; i < itemHeld.Length - 1; i++)
+            {
+                if (itemHeld[i] == "")
+                {
+                    itemHeld[i] = itemHeld[i + 1];
+                    itemHeld[i + 1] = "";
+
+                    numberOfItems[i] = numberOfItems[i + 1];
+                    numberOfItems[i + 1] = 0;
+                    if (itemHeld[i] != "")
+                        itemAfterSpace = true;
+                }
+            }
+        } while (itemAfterSpace);
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameMenu : MonoBehaviour
 {
+    public static GameMenu instance;
+
     public GameObject menu;
     public GameObject[] windows;
 
@@ -19,10 +21,16 @@ public class GameMenu : MonoBehaviour
     public Text statusName, statusHP, statusMP, statusAtk, statusDef, statusWpnName, statusWpnAtk, statusArmName, statusArmDef, statusExp;
     public Image statusImage;
 
+    [Header("Items")]
+    public ItemButton[] itemButtons;
+    public string selectedItem;
+    public Item activeItems;
+    public Text itemName, itemDescription, useButtonText;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        instance = this;
     }
 
     // Update is called once per frame
@@ -126,5 +134,39 @@ public class GameMenu : MonoBehaviour
         statusExp.text = (playerStats[n].expToNextLevel[playerStats[n].playerLevel] - playerStats[n].playerExp).ToString();
 
         statusImage.sprite = playerStats[n].charImage;
+    }
+
+    public void ShowItems()
+    {
+        GameManager.instance.SortItems();
+        for (int i = 0; i < itemButtons.Length; i++)
+        {
+            itemButtons[i].buttonValue = i;
+
+            if (GameManager.instance.itemHeld[i] != "")
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(true);
+                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItem(GameManager.instance.itemHeld[i]).itemSprite;
+                itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString();
+            }
+            else
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(false);
+                itemButtons[i].amountText.text = "";
+            }
+        }
+    }
+
+    public void SelectedItem(Item item)
+    {
+        activeItems = item;
+
+        if (activeItems.isItem)
+            useButtonText.text = "Use";
+        else if (activeItems.isWeapon || activeItems.isArmor)
+            useButtonText.text = "Equip";
+
+        itemName.text = activeItems.itemName;
+        itemDescription.text = activeItems.description;
     }
 }
