@@ -11296,98 +11296,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1694792421}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StatusChar
-      objectReference: {fileID: 0}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 910339185, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1694792421}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StatusChar
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1003258957, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1694792421}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StatusChar
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameMenu, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016128843, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1690512157, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -12793,17 +12701,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1694792421 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1694792421, guid: ff049a1ad931ec844aa95669f0861bef, type: 3}
-  m_PrefabInstance: {fileID: 985708854}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd0c24065d0483244b2993647ed4e31d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1701258722
 GameObject:
   m_ObjectHideFlags: 0
