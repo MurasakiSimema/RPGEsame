@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     
     public bool gameMenuOpen, dialogActive, fadingArea;
 
-    public string[] itemHeld;
+    public string[] itemsHeld;
     public int[] numberOfItems;
     public List<Item> referenceItem;
 
@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
             PlayerController.instance.canMove = false;
         else
             PlayerController.instance.canMove = true;
+
+        //if (Input.GetKeyDown(KeyCode.J))
+            //AddItem("Iron Armor");
     }
 
     public Item GetItem(string itemToGrab)
@@ -43,19 +46,64 @@ public class GameManager : MonoBehaviour
         do
         {
             itemAfterSpace = false;
-            for (int i = 0; i < itemHeld.Length - 1; i++)
+            for (int i = 0; i < itemsHeld.Length - 1; i++)
             {
-                if (itemHeld[i] == "")
+                if (itemsHeld[i] == "")
                 {
-                    itemHeld[i] = itemHeld[i + 1];
-                    itemHeld[i + 1] = "";
+                    itemsHeld[i] = itemsHeld[i + 1];
+                    itemsHeld[i + 1] = "";
 
                     numberOfItems[i] = numberOfItems[i + 1];
                     numberOfItems[i + 1] = 0;
-                    if (itemHeld[i] != "")
+                    if (itemsHeld[i] != "")
                         itemAfterSpace = true;
                 }
             }
         } while (itemAfterSpace);
+    }
+
+    public void AddItem(string item)
+    {
+        bool found = false;
+        for(int i = 0; i < itemsHeld.Length; i++)
+        {
+            if(itemsHeld[i]=="" || itemsHeld[i] == item)
+            {
+                foreach(Item elem in referenceItem)
+                {
+                    if(elem.itemName == item)
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (found)
+                {
+                    itemsHeld[i] = item;
+                    numberOfItems[i]++;
+                }
+                else
+                    Debug.LogError(item + " non trovato");
+
+                break;
+            }
+        }
+        GameMenu.instance.ShowItems();
+    }
+    public void RemoveItem(string item)
+    {
+        for (int i = 0; i < itemsHeld.Length; i++)
+        {
+            if (itemsHeld[i] == item)
+            {
+                numberOfItems[i]--;
+                if (numberOfItems[i] <= 0)
+                    itemsHeld[i] = "";
+
+                break;
+            }
+        }
+        GameMenu.instance.ShowItems();
     }
 }

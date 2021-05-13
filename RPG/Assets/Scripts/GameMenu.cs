@@ -143,10 +143,10 @@ public class GameMenu : MonoBehaviour
         {
             itemButtons[i].buttonValue = i;
 
-            if (GameManager.instance.itemHeld[i] != "")
+            if (GameManager.instance.itemsHeld[i] != "")
             {
                 itemButtons[i].buttonImage.gameObject.SetActive(true);
-                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItem(GameManager.instance.itemHeld[i]).itemSprite;
+                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItem(GameManager.instance.itemsHeld[i]).itemSprite;
                 itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString();
             }
             else
@@ -168,5 +168,13 @@ public class GameMenu : MonoBehaviour
 
         itemName.text = activeItems.itemName;
         itemDescription.text = activeItems.description;
+    }
+
+    public void DiscardItem()
+    {
+        if (activeItems != null)
+        {
+            GameManager.instance.RemoveItem(activeItems.itemName);
+        }
     }
 }

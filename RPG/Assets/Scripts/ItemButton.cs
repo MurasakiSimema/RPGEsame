@@ -22,9 +22,9 @@ public class ItemButton : MonoBehaviour
     }
     public void Press()
     {
-        if (GameManager.instance.itemHeld[buttonValue] != "")
+        if (GameManager.instance.itemsHeld[buttonValue] != "")
         {
-            GameMenu.instance.SelectedItem(GameManager.instance.GetItem(GameManager.instance.itemHeld[buttonValue]));
+            GameMenu.instance.SelectedItem(GameManager.instance.GetItem(GameManager.instance.itemsHeld[buttonValue]));
         }
     }
 }

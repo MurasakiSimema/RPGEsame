@@ -1,0 +1,2 @@
+G:\RPGEsame\RPG\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+G:\RPGEsame\RPG\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

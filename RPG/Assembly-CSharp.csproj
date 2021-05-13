@@ -67,9 +67,9 @@
     <Compile Include="Assets\Scripts\GameMenu.cs" />
     <Compile Include="Assets\Scripts\ToArea.cs" />
     <Compile Include="Assets\Scripts\UIFade.cs" />
+    <Compile Include="Assets\Scripts\ItemButton.cs" />
     <Compile Include="Assets\Scripts\FromArea.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\Scripts\ItemButton.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />
