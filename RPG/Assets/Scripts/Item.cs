@@ -33,4 +33,39 @@ public class Item : MonoBehaviour
     {
 
     }
+
+    public void Use(int charToUse)
+    {
+        CharStats selectedchar = GameManager.instance.playerStats[charToUse];
+
+        if (isItem)
+        {
+            if (affectHP)
+                selectedchar.CurrentHP += amountToChange;
+
+            if (affectMP)
+                selectedchar.CurrentMP += amountToChange;
+
+            if (affectStr)
+                selectedchar.atk += amountToChange;
+        }
+        else if (isWeapon)
+        {
+            if (selectedchar.weaponName != "")
+                GameManager.instance.AddItem(selectedchar.weaponName);
+            
+            selectedchar.weaponName = itemName;
+            selectedchar.weaponAtk = weaponAtk;
+        }
+        else if (isArmor)
+        {
+            if (selectedchar.armorName != "")
+                GameManager.instance.AddItem(selectedchar.armorName);
+
+            selectedchar.armorName = itemName;
+            selectedchar.armorDef = armorDef;
+        }
+
+        GameManager.instance.RemoveItem(itemName);
+    }
 }

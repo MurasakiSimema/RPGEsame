@@ -27,6 +27,26 @@ public class CharStats : MonoBehaviour
     {
         expToNextLevel = new int[] { 0, 300, 900, 2700, 6500, 14000, 23000, 34000, 48000, 64000, 85000, 100000, 120000, 140000, 165000, 195000, 225000, 265000, 305000, 355000 };
     }
+    public int CurrentHP
+    {
+        get => currentHP;
+        set
+        {
+            currentHP += value;
+            if (currentHP >= maxHP)
+                currentHP = maxHP;
+        }
+    }
+    public int CurrentMP
+    {
+        get => currentMP;
+        set
+        {
+            currentMP += value;
+            if (currentMP >= maxMP)
+                currentMP = maxMP;
+        }
+    }
 
     // Update is called once per frame
     void Update()

@@ -21,11 +21,13 @@ public class GameMenu : MonoBehaviour
     public Text statusName, statusHP, statusMP, statusAtk, statusDef, statusWpnName, statusWpnAtk, statusArmName, statusArmDef, statusExp;
     public Image statusImage;
 
-    [Header("Items")]
     public ItemButton[] itemButtons;
     public string selectedItem;
     public Item activeItems;
     public Text itemName, itemDescription, useButtonText;
+
+    public GameObject itemCharChoiceMenu;
+    public Text[] itemCharChoiceNames;
 
     // Start is called before the first frame update
     void Start()
@@ -90,6 +92,8 @@ public class GameMenu : MonoBehaviour
                 windows[i].SetActive(false);
             }
         }
+
+        itemCharChoiceMenu.SetActive(false);
     }
 
     public void CloseMenu()
@@ -120,9 +124,9 @@ public class GameMenu : MonoBehaviour
         statusDef.text = playerStats[n].def.ToString();
 
         if (playerStats[n].weaponName != "")
-            statusArmName.text = playerStats[n].weaponName;
+            statusWpnName.text = playerStats[n].weaponName;
         else
-            statusArmName.text = "None";
+            statusWpnName.text = "None";
         statusWpnAtk.text = playerStats[n].weaponAtk.ToString();
 
         if (playerStats[n].armorName != "")
@@ -176,5 +180,26 @@ public class GameMenu : MonoBehaviour
         {
             GameManager.instance.RemoveItem(activeItems.itemName);
         }
+    }
+
+    public void OpenItemCharChoise()
+    {
+        itemCharChoiceMenu.SetActive(true);
+
+        for(int i = 0; i < itemCharChoiceNames.Length; i++)
+        {
+            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
+            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+        }
+    }
+    public void CloseItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(false);
+    }
+    public void UseItem(int selectedChar)
+    {
+        activeItems.Use(selectedChar);
+        CloseItemCharChoice();
+        ShowItems();
     }
 }
