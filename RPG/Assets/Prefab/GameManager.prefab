@@ -50,6 +50,50 @@ MonoBehaviour:
   - {fileID: 1548035366312367726}
   - {fileID: 1548035366637107529}
   - {fileID: 1548035367236056837}
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingArea: 0
+  itemsHeld:
+  - Health Potion
+  - Bronze Sword
+  - Mana Potion
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numberOfItems: 1100000001000000770000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000
+  referenceItem:
+  - {fileID: 389021545733788263, guid: 8bff0cdd3087c88499ba6eb947cb2ff3, type: 3}
+  - {fileID: 2915342500340122077, guid: 47fb50a892abdf14da1ecd97209474db, type: 3}
+  - {fileID: 3746246005980480103, guid: 5780c762c763dd849bcbf4ec5fb03cf6, type: 3}
+  - {fileID: 5837742030791963289, guid: 45af8360c5d33c141b48060541b1c3b5, type: 3}
+  - {fileID: 2073528306139071622, guid: aefecbce55d7faf469dafa18cd0f73d6, type: 3}
+  - {fileID: 8834223199499133484, guid: ce4adbb44788b7647a6485b7691a915c, type: 3}
 --- !u!1 &1548035366312367712
 GameObject:
   m_ObjectHideFlags: 0

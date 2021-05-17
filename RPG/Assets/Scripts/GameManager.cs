@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,17 +9,27 @@ public class GameManager : MonoBehaviour
 
     public CharStats[] playerStats;
     
-    public bool gameMenuOpen, dialogActive, fadingArea;
+    public bool gameMenuOpen, dialogActive, fadingArea, shopActive;
 
     public string[] itemsHeld;
     public int[] numberOfItems;
     public List<Item> referenceItem;
 
+    public int currentGold;
+
+
+    public int MaxLv
+    {
+        get
+        {
+            int[] livelli = playerStats.Select(player => player.playerLevel).ToArray();
+            return Mathf.Max(livelli);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
-
         DontDestroyOnLoad(gameObject);
         SortItems();
     }
@@ -26,7 +37,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameMenuOpen || dialogActive || fadingArea)
+        if (gameMenuOpen || dialogActive || fadingArea || shopActive) 
             PlayerController.instance.canMove = false;
         else
             PlayerController.instance.canMove = true;

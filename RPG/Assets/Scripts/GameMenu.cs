@@ -29,6 +29,8 @@ public class GameMenu : MonoBehaviour
     public GameObject itemCharChoiceMenu;
     public Text[] itemCharChoiceNames;
 
+    public Text goldText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class GameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && PlayerController.instance.canMove)
         {
             if (menu.activeInHierarchy)
             {
@@ -76,6 +78,8 @@ public class GameMenu : MonoBehaviour
             else
                 charStatsHolder[i].SetActive(false);
         }
+
+        goldText.text = GameManager.instance.currentGold + "g";
     }
 
     public void ToggleWindow(int n)
