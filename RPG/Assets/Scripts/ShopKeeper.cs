@@ -17,7 +17,7 @@ public class ShopKeeper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        itemsToSell = new List<string>();
+        
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class ShopKeeper : MonoBehaviour
 
     IEnumerator GetText()
     {
-        UnityWebRequest www = new UnityWebRequest("https://jsonplaceholder.typicode.com/posts");
+        UnityWebRequest www = new UnityWebRequest("https://apirpgesame.herokuapp.com/items?lv=" + GameManager.instance.MaxLv);
         www.downloadHandler = new DownloadHandlerBuffer();
         yield return www.SendWebRequest();
 
@@ -53,7 +53,15 @@ public class ShopKeeper : MonoBehaviour
         {
             Debug.Log(www.downloadHandler.text);
 
-            byte[] results = www.downloadHandler.data;
+            string output = www.downloadHandler.text;
+            List<ItemToSell> items = JsonConvert.DeserializeObject<List<ItemToSell>>(output);
+
+            itemsToSell = new List<string>();
+            foreach (ItemToSell item in items)
+                itemsToSell.Add(item.Nome);
+
+            Shop.instance.itemToSell = itemsToSell.ToArray();
+            Shop.instance.OpenShop();
         }
     }
     string authenticate(string username, string password)

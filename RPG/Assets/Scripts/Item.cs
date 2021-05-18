@@ -68,4 +68,22 @@ public class Item : MonoBehaviour
 
         GameManager.instance.RemoveItem(itemName);
     }
+    public void UseBattle(int charToUse)
+    {
+        BattleChar selectedchar = BattleManager.instance.activeBattler[charToUse];
+
+        if (isItem)
+        {
+            if (affectHP)
+                selectedchar.CurrentHP += amountToChange;
+
+            if (affectMP)
+                selectedchar.CurrentMP += amountToChange;
+
+            if (affectStr)
+                selectedchar.atk += amountToChange;
+        }
+
+        GameManager.instance.RemoveItem(itemName);
+    }
 }
