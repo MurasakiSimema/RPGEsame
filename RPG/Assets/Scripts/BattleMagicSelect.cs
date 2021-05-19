@@ -30,6 +30,7 @@ public class BattleMagicSelect : MonoBehaviour
         }
         else
         {
+            BattleManager.instance.battleNotification.awakeTime = 1.5f;
             BattleManager.instance.battleNotification.Activate("Not Enought MP!");
             BattleManager.instance.magicMenu.SetActive(false);
         }

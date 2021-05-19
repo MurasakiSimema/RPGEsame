@@ -108,3 +108,6 @@ MonoBehaviour:
   wpnAtk: 0
   armDef: 0
   isDead: 0
+  sprite: {fileID: 6398540317962562314}
+  deadSpirte: {fileID: 21300046, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+  aliveSprite: {fileID: 21300036, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}

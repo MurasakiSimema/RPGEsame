@@ -206,4 +206,8 @@ public class GameMenu : MonoBehaviour
         CloseItemCharChoice();
         ShowItems();
     }
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

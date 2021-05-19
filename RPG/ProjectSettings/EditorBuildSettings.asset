@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Percorso1.unity
-    guid: 8150bef592331aa46a891b13a6f4e0e3
-  - enabled: 1
     path: Assets/Scenes/Villaggio.unity
     guid: 735e6e3d6b079b149a2a348171531eec
   - enabled: 1
     path: Assets/Scenes/Negozio.unity
     guid: ae5415c0e58107546b2c8a1fcdb0ecb0
   - enabled: 1
+    path: Assets/Scenes/Percorso1.unity
+    guid: 8150bef592331aa46a891b13a6f4e0e3
+  - enabled: 1
     path: Assets/Scenes/Cave.unity
     guid: e56f7bb62b2f4ce4daf7751c77bd4c77
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: e95e6b146fcfbd4479f1537ad9e4c05c
   m_configObjects: {}

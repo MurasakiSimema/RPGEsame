@@ -108,3 +108,7 @@ MonoBehaviour:
   wpnAtk: 5
   armDef: 5
   isDead: 0
+  sprite: {fileID: 7173523744984785823}
+  deadSpirte: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  fadeSpeed: 1

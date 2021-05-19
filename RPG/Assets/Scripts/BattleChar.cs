@@ -11,6 +11,11 @@ public class BattleChar : MonoBehaviour
     public int currentHP, maxHP, currentMP, maxMP, atk, def, wpnAtk, armDef;
     public bool isDead;
 
+    public SpriteRenderer sprite;
+    public Sprite deadSpirte, aliveSprite;
+    private bool shouldFade;
+    public float fadeSpeed = 1f;
+
     public int CurrentHP
     {
         get => currentHP;
@@ -40,6 +45,13 @@ public class BattleChar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (shouldFade)
+            sprite.color = new Color(Mathf.MoveTowards(sprite.color.r, 1f, fadeSpeed * Time.deltaTime), Mathf.MoveTowards(sprite.color.g, 0f, fadeSpeed * Time.deltaTime), Mathf.MoveTowards(sprite.color.b, 0f, fadeSpeed * Time.deltaTime), Mathf.MoveTowards(sprite.color.a, 0f, fadeSpeed * Time.deltaTime));
+        if (sprite.color.a == 0)
+            gameObject.SetActive(false);
+    }
+    public void EnemyFade()
+    {
+        shouldFade = true;
     }
 }
