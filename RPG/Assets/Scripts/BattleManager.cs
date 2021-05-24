@@ -73,8 +73,6 @@ public class BattleManager : MonoBehaviour
                     StartCoroutine(EnemyMoveCo());
                 }
             }
-            if (Input.GetKeyDown(KeyCode.N))
-                NextTurn();
         }
     }
     public void BattleStart(string[] enemies)
