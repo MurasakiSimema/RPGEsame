@@ -256,6 +256,10 @@ MonoBehaviour:
     - Health Potion
     - Health Potion
     - Mana Potion
+  - exp: 5000
+    enemies:
+    - Boss1
+    items: []
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -3260,5 +3264,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2911957509220902454, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
+      propertyPath: enemyPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911957509220902454, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
+      propertyPath: enemyPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 1831972898425122762, guid: 6259acb9f25ea4449b96516ee576df0e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}

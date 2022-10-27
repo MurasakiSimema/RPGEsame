@@ -2827,10 +2827,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fd825c45d1e4d44d991c3182e2f597c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemsToSell: []
-  url: localhost:3300
-  user: username
-  pass: password1
+  itemsToSell:
+  - Bronze Sword
+  - Leather Armor
+  - Health Potion
+  - Iron Sword
+  - Iron Armor
+  - Mana Potion
+  url: https://apirpgesame.herokuapp.com/items
+  online: 0
 --- !u!1 &1674921750
 GameObject:
   m_ObjectHideFlags: 0

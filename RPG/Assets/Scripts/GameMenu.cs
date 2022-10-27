@@ -113,7 +113,7 @@ public class GameMenu : MonoBehaviour
     {
         UpdateMainStats();
         StatusChar(0);
-        for(int i = 0; i < statusButtons.Length; i++)
+        for (int i = 0; i < statusButtons.Length; i++)
         {
             statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
             statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].charName;
@@ -190,7 +190,7 @@ public class GameMenu : MonoBehaviour
     {
         itemCharChoiceMenu.SetActive(true);
 
-        for(int i = 0; i < itemCharChoiceNames.Length; i++)
+        for (int i = 0; i < itemCharChoiceNames.Length; i++)
         {
             itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
             itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
@@ -208,6 +208,8 @@ public class GameMenu : MonoBehaviour
     }
     public void Quit()
     {
+        CloseMenu();
+        //Cambiare in torna al menu
         Application.Quit();
     }
 }

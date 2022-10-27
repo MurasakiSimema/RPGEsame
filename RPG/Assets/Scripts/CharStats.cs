@@ -7,7 +7,7 @@ public class CharStats : MonoBehaviour
     public string charName;
     public Sprite charImage;
     public int playerLevel = 1;
-    public int maxLevel = 20;
+    public int maxLevel = 8;
     public int playerExp = 0;
     public int[] expToNextLevel;
 
@@ -25,7 +25,12 @@ public class CharStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        expToNextLevel = new int[] { 0, 300, 900, 2700, 6500, 14000, 23000, 34000, 48000, 64000, 85000, 100000, 120000, 140000, 165000, 195000, 225000, 265000, 305000, 355000 };
+        expToNextLevel = new int[8];
+        expToNextLevel[0] = 0;
+        for (int x = 1; x < maxLevel; x++) 
+            expToNextLevel[x] = Mathf.FloorToInt(2000 - (7325 * x) / 3 + (1625 * Mathf.Pow(x, 2)) / 2 + (375 * Mathf.Pow(x, 3)) / 2 - (125 * Mathf.Pow(x, 4)) / 2 + (25 * Mathf.Pow(x, 5)) / 6);
+        
+        //expToNextLevel = new int[] { 0, 500, 1000, 3000, 5500, 7500, 8500, 9000 };
     }
     public int CurrentHP
     {
@@ -62,7 +67,7 @@ public class CharStats : MonoBehaviour
         playerExp += exp;
 
 
-        if (playerLevel < expToNextLevel.Length && playerExp > expToNextLevel[playerLevel]) 
+        if (playerLevel < expToNextLevel.Length && playerExp >= expToNextLevel[playerLevel]) 
         {
             playerLevel++;
             if (playerLevel % 2 == 0)
@@ -72,10 +77,12 @@ public class CharStats : MonoBehaviour
 
             int newhp = Mathf.FloorToInt(maxHP * 0.25f);
             maxHP += newhp;
-            currentHP = newhp;
+            CurrentHP = newhp;
 
             maxMP += 5 * (playerLevel - 1);
-            currentMP += maxMP;
+            CurrentMP = maxMP;
+
+            AddExp(0);
         }
     }
 }

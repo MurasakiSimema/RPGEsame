@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548035365856174208}
   - component: {fileID: 1548035365856174209}
+  - component: {fileID: 5840690880252248686}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -54,6 +55,7 @@ MonoBehaviour:
   dialogActive: 0
   fadingArea: 0
   shopActive: 0
+  battleActive: 0
   itemsHeld:
   - Health Potion
   - Bronze Sword
@@ -96,6 +98,25 @@ MonoBehaviour:
   - {fileID: 2073528306139071622, guid: aefecbce55d7faf469dafa18cd0f73d6, type: 3}
   - {fileID: 8834223199499133484, guid: ce4adbb44788b7647a6485b7691a915c, type: 3}
   currentGold: 800
+--- !u!114 &5840690880252248686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548035365856174211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a383dfa117e3c940b1e7751798d97a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkeNames:
+  - 
+  - InizioBoss
+  - FineBoss
+  - 
+  - 
+  questMarkerStatus: 
 --- !u!1 &1548035366312367712
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +163,7 @@ MonoBehaviour:
   charName: Murasaki
   charImage: {fileID: 7152930139536384079, guid: 3159679f88414f0409e1671ad33983e8, type: 3}
   playerLevel: 1
-  maxLevel: 100
+  maxLevel: 8
   playerExp: 250
   expToNextLevel: 
   currentHP: 100
@@ -201,7 +222,7 @@ MonoBehaviour:
   charName: Simema
   charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
   playerLevel: 1
-  maxLevel: 100
+  maxLevel: 8
   playerExp: 0
   expToNextLevel: 
   currentHP: 100
@@ -260,7 +281,7 @@ MonoBehaviour:
   charName: Simema
   charImage: {fileID: 21300000, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
   playerLevel: 1
-  maxLevel: 100
+  maxLevel: 8
   playerExp: 0
   expToNextLevel: 
   currentHP: 100

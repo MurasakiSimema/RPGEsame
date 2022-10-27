@@ -10,9 +10,8 @@ public class ShopKeeper : MonoBehaviour
 {
     private bool canOpen;
     public List<string> itemsToSell;
-    public string url = "http://127.0.0.1/items";
-    public string user = "username";
-    public string pass = "password1";
+    public string url = "https://apirpgesame.herokuapp.com/items";
+    public bool online = false;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +24,13 @@ public class ShopKeeper : MonoBehaviour
     {
         if (canOpen && Input.GetButtonDown("Jump") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
-            StartCoroutine(GetText());
+            if(online)
+                StartCoroutine(GetText());
+            else
+            {
+                Shop.instance.itemToSell = itemsToSell.ToArray();
+                Shop.instance.OpenShop();
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,13 +46,15 @@ public class ShopKeeper : MonoBehaviour
 
     IEnumerator GetText()
     {
-        UnityWebRequest www = new UnityWebRequest("https://apirpgesame.herokuapp.com/items?lv=" + GameManager.instance.MaxLv);
+        UnityWebRequest www = new UnityWebRequest(url + "?lv=" + GameManager.instance.MaxLv);
         www.downloadHandler = new DownloadHandlerBuffer();
         yield return www.SendWebRequest();
 
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.LogWarning(www.error);
+            Shop.instance.itemToSell = itemsToSell.ToArray();
+            Shop.instance.OpenShop();
         }
         else
         {
@@ -63,13 +70,6 @@ public class ShopKeeper : MonoBehaviour
             Shop.instance.itemToSell = itemsToSell.ToArray();
             Shop.instance.OpenShop();
         }
-    }
-    string authenticate(string username, string password)
-    {
-        string auth = username + ":" + password;
-        auth = System.Convert.ToBase64String(System.Text.Encoding.GetEncoding("ISO-8859-1").GetBytes(auth));
-        auth = "Basic " + auth;
-        return auth;
     }
 }
 

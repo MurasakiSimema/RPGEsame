@@ -1285,4 +1285,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Percorso1.unity
   - Assets/Scenes/Cave.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: E:/ElaboratoEsame/RPGEsame/Build/RPGEsame.exe
+  playerPath: E:/ElaboratoEsame/Build/RPGEsame.exe

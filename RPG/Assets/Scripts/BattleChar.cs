@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BattleChar : MonoBehaviour
 {
     public bool isPlayer;
     public string[] movesAvailabe;
-
     public string charName;
     public int currentHP, maxHP, currentMP, maxMP, atk, def, wpnAtk, armDef;
     public bool isDead;
@@ -16,6 +16,9 @@ public class BattleChar : MonoBehaviour
     private bool shouldFade;
     public float fadeSpeed = 1f;
 
+    public BattleChar(){
+        
+    }
     public int CurrentHP
     {
         get => currentHP;
@@ -53,5 +56,10 @@ public class BattleChar : MonoBehaviour
     public void EnemyFade()
     {
         shouldFade = true;
+    }
+    public virtual BattleMove ChooseAttack(BattleMove[] moves){
+        int selectAttackIdx = Random.Range(0, movesAvailabe.Length);
+        
+        return moves.Where(move => move.moveName == this.movesAvailabe[selectAttackIdx]).ToArray()[0];
     }
 }

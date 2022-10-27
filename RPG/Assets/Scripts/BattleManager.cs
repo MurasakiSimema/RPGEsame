@@ -13,7 +13,8 @@ public class BattleManager : MonoBehaviour
 
     public GameObject battleScene, statsMenu;
     public Transform[] playerPosition, enemiesPosition;
-    public BattleChar[] playerPrefabs, enemyPrefabs;
+    public BattleChar[] playerPrefabs;
+    public BattleChar[] enemyPrefabs;
 
     public List<BattleChar> activeBattler;
 
@@ -158,9 +159,7 @@ public class BattleManager : MonoBehaviour
         foreach (var battler in activeBattler)
         {
             if (battler.currentHP < 0)
-            {
                 battler.currentHP = 0;
-            }
 
             if (battler.currentHP == 0)
             {
@@ -174,9 +173,7 @@ public class BattleManager : MonoBehaviour
                         battleNotification.Activate(battler.charName + " fainted");
                     }
                     else
-                    {
                         battler.EnemyFade();
-                    }
                 }
             }
             else
@@ -222,8 +219,7 @@ public class BattleManager : MonoBehaviour
 
         int targetidx = playeridxs[Random.Range(0, playeridxs.Length)].idx;
 
-        int selectAttackIdx = Random.Range(0, activeBattler[currentTurn].movesAvailabe.Length);
-        var selectAttack = moves.Where(move => move.moveName == activeBattler[currentTurn].movesAvailabe[selectAttackIdx]).ToArray()[0];
+        var selectAttack = activeBattler[currentTurn].ChooseAttack(moves);
 
         Instantiate(selectAttack.effect, activeBattler[targetidx].transform.position, activeBattler[targetidx].transform.rotation);
         Instantiate(enemyAttackEffect, activeBattler[currentTurn].transform.position, activeBattler[currentTurn].transform.rotation);
@@ -268,7 +264,7 @@ public class BattleManager : MonoBehaviour
         DealDamage(targetidx, selectAttack.movePower);
         uiButtonsHolder.SetActive(false);
         targetMenu.SetActive(false);
-        
+
         NextTurn();
     }
     public void OpenTargetMenu(string moveName)
@@ -306,8 +302,6 @@ public class BattleManager : MonoBehaviour
                 var selectSpell = moves.Where(move => move.moveName == activeBattler[currentTurn].movesAvailabe[i]).ToArray()[0];
                 magicButtons[i].spellCost = selectSpell.moveCost;
                 magicButtons[i].costText.text = selectSpell.moveCost.ToString();
-
-
             }
             else
                 magicButtons[i].gameObject.SetActive(false);
@@ -401,7 +395,7 @@ public class BattleManager : MonoBehaviour
             GameManager.instance.battleActive = false;
         else
             BattleReward.instance.OpenRewardScreen(rewardXP, rewardItems);
-        
+
     }
     public IEnumerator GameOverCo()
     {
