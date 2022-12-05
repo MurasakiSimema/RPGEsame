@@ -26,8 +26,14 @@ public class QuestObjectActivator : MonoBehaviour
     }
     public void CheckQuests()
     {
+        bool ok = true;
         for (int i = 0; i < questToCheck.Count; i++)
-            if (QuestManager.instance.CheckIfComplete(questToCheck[i]))
-                objectToActivate.SetActive(activeIfTrue[i]);
+            if (QuestManager.instance.CheckIfComplete(questToCheck[i]) != activeIfTrue[i])
+            {
+                ok = false;
+                break;
+            }
+        Debug.Log(ok);
+        objectToActivate.SetActive(ok);
     }
 }

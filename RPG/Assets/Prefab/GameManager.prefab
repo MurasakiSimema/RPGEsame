@@ -115,7 +115,6 @@ MonoBehaviour:
   - InizioBoss
   - FineBoss
   - 
-  - 
   questMarkerStatus: 
 --- !u!1 &1548035366312367712
 GameObject:

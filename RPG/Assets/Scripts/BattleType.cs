@@ -8,4 +8,5 @@ public class BattleType
     public int exp;
     public string[] enemies;
     public string[] items;
+    public bool denyEscape;
 }

@@ -47,6 +47,7 @@ public class BattleManager : MonoBehaviour
 
     public int rewardXP;
     public string[] rewardItems;
+    public bool denyEscape;
 
     // Start is called before the first frame update
     void Start()
@@ -311,7 +312,7 @@ public class BattleManager : MonoBehaviour
     {
         int fleeRnd = Random.Range(0, 100);
 
-        if (fleeRnd < chanceToFlee)
+        if (!denyEscape && fleeRnd < chanceToFlee)
         {
             flee = true;
             StartCoroutine(EndBattleCo());

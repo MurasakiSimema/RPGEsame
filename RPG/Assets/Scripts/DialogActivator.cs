@@ -8,6 +8,11 @@ public class DialogActivator : MonoBehaviour
     public bool isPerson = true;
 
     private bool canActivate;
+
+    public bool shouldActivateQuest;
+    public string questToMark;
+    public bool markComplete = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +25,8 @@ public class DialogActivator : MonoBehaviour
         if (canActivate && Input.GetButtonDown("Jump") && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
             DialogManager.instance.ShowDialog(dialog, isPerson);
+            if (shouldActivateQuest)
+                DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
         }
     }
 

@@ -66,6 +66,7 @@ public class BattleStarter : MonoBehaviour
 
         BattleManager.instance.rewardItems = battles[selectedBattle].items;
         BattleManager.instance.rewardXP = battles[selectedBattle].exp;
+        BattleManager.instance.denyEscape = battles[selectedBattle].denyEscape;
 
         yield return new WaitForSeconds(1.5f);
         BattleManager.instance.BattleStart(battles[selectedBattle].enemies);

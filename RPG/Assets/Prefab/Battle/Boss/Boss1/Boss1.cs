@@ -25,7 +25,7 @@ public class Boss1 : BattleChar
     public override BattleMove ChooseAttack(BattleMove[] moves)
     {
         turn++;
-        if (turn % 2 == 0)
+        if (turn % 3 < 2)
             return moves.Where(move => move.moveName == "Flame").ToArray()[0];
         else
             return base.ChooseAttack(moves);

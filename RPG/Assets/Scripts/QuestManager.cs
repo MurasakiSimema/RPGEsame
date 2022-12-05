@@ -32,20 +32,23 @@ public class QuestManager : MonoBehaviour
     public void MarkQuestTrue(string questName)
     {
         int idx = questMarkeNames.IndexOf(questName);
-        questMarkerStatus[idx] = true;
+        if (idx >= 0)
+            questMarkerStatus[idx] = true;
 
         UpdateLocalQuestObjects();
     }
     public void MarkQuestFalse(string questName)
     {
         int idx = questMarkeNames.IndexOf(questName);
-        questMarkerStatus[idx] = false;
+        if (idx >= 0)
+            questMarkerStatus[idx] = false;
 
         UpdateLocalQuestObjects();
     }
     public void UpdateLocalQuestObjects()
     {
         QuestObjectActivator[] questObjects = FindObjectsOfType<QuestObjectActivator>();
+        Debug.Log(questObjects.Length);
 
         foreach (QuestObjectActivator questObject in questObjects)
             questObject.CheckQuests();

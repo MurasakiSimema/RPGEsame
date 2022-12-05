@@ -15,8 +15,8 @@ public class CharStats : MonoBehaviour
     public int maxHP = 100;
     public int currentMP;
     public int maxMP = 50;
-    public int atk = 1;
-    public int def = 1;
+    public int atk = 10;
+    public int def = 10;
     public int weaponAtk;
     public string weaponName;
     public int armorDef;
@@ -27,10 +27,10 @@ public class CharStats : MonoBehaviour
     {
         expToNextLevel = new int[8];
         expToNextLevel[0] = 0;
-        for (int x = 1; x < maxLevel; x++) 
-            expToNextLevel[x] = Mathf.FloorToInt(2000 - (7325 * x) / 3 + (1625 * Mathf.Pow(x, 2)) / 2 + (375 * Mathf.Pow(x, 3)) / 2 - (125 * Mathf.Pow(x, 4)) / 2 + (25 * Mathf.Pow(x, 5)) / 6);
+        //for (int x = 1; x < maxLevel; x++) 
+            //expToNextLevel[x] = Mathf.FloorToInt(2000 - (7325 * x) / 3 + (1625 * Mathf.Pow(x, 2)) / 2 + (375 * Mathf.Pow(x, 3)) / 2 - (125 * Mathf.Pow(x, 4)) / 2 + (25 * Mathf.Pow(x, 5)) / 6);
         
-        //expToNextLevel = new int[] { 0, 500, 1000, 3000, 5500, 7500, 8500, 9000 };
+        expToNextLevel = new int[] { 0, 500, 1000, 3000, 5500, 7500, 8500, 9000 };
     }
     public int CurrentHP
     {
@@ -70,10 +70,8 @@ public class CharStats : MonoBehaviour
         if (playerLevel < expToNextLevel.Length && playerExp >= expToNextLevel[playerLevel]) 
         {
             playerLevel++;
-            if (playerLevel % 2 == 0)
-                atk++;
-            else
-                def++;
+            atk = Mathf.FloorToInt(atk * 1.2f);
+            def = Mathf.FloorToInt(def * 1.15f);
 
             int newhp = Mathf.FloorToInt(maxHP * 0.25f);
             maxHP += newhp;

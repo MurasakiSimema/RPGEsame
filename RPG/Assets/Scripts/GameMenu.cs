@@ -59,6 +59,8 @@ public class GameMenu : MonoBehaviour
     {
         playerStats = GameManager.instance.playerStats;
 
+        Debug.Log(playerStats.Length);
+
         for (int i = 0; i < playerStats.Length; i++)
         {
             if (playerStats[i].gameObject.activeInHierarchy)
@@ -70,7 +72,7 @@ public class GameMenu : MonoBehaviour
                 mpText[i].text = "MP: " + playerStats[i].currentMP + "/" + playerStats[i].maxMP;
                 lvlText[i].text = "Lvl: " + playerStats[i].playerLevel;
                 expTotText[i].text = "Exp: " + playerStats[i].playerExp;
-                expText[i].text = playerStats[i].playerExp + "/" + playerStats[i].expToNextLevel[playerStats[i].playerLevel];
+                expText[i].text = playerStats[i].playerExp + "/" + (playerStats[i].expToNextLevel.Length < playerStats[i].playerLevel ? playerStats[i].expToNextLevel[playerStats[i].playerLevel] : '0');
                 expSlider[i].maxValue = playerStats[i].expToNextLevel[playerStats[i].playerLevel];
                 expSlider[i].value = playerStats[i].playerExp;
                 charImage[i].sprite = playerStats[i].charImage;

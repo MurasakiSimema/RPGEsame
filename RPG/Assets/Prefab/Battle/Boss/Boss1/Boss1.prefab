@@ -103,8 +103,8 @@ MonoBehaviour:
   maxHP: 500
   currentMP: 0
   maxMP: 0
-  atk: 100
-  def: 100
+  atk: 50
+  def: 50
   wpnAtk: 0
   armDef: 0
   isDead: 0
