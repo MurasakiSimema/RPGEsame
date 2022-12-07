@@ -85,11 +85,12 @@
     <Compile Include="Assets\Scripts\BattleReward.cs" />
     <Compile Include="Assets\Scripts\DamageNumber.cs" />
     <Compile Include="Assets\Scripts\ItemButton.cs" />
+    <Compile Include="Assets\Scripts\QuestMarker.cs" />
     <Compile Include="Assets\Scripts\BattleTargetButton.cs" />
     <Compile Include="Assets\Scripts\BattleNotification.cs" />
     <Compile Include="Assets\Scripts\FromArea.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\Scripts\QuestMarker.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />
