@@ -52,6 +52,8 @@ public class GameMenu : MonoBehaviour
                 UpdateMainStats();
                 GameManager.instance.gameMenuOpen = true;
             }
+
+            AudioManager.instance.PlaySFX(6);
         }
     }
 
@@ -104,6 +106,7 @@ public class GameMenu : MonoBehaviour
 
     public void CloseMenu()
     {
+        PlayButtonSound();
         foreach (GameObject win in windows)
             win.SetActive(false);
 
@@ -113,6 +116,7 @@ public class GameMenu : MonoBehaviour
 
     public void OpenStatus()
     {
+        PlayButtonSound();
         UpdateMainStats();
         StatusChar(0);
         for (int i = 0; i < statusButtons.Length; i++)
@@ -123,6 +127,7 @@ public class GameMenu : MonoBehaviour
     }
     public void StatusChar(int n)
     {
+        PlayButtonSound();
         statusName.text = playerStats[n].charName;
         statusHP.text = playerStats[n].currentHP + "/" + playerStats[n].maxHP;
         statusMP.text = playerStats[n].currentMP + "/" + playerStats[n].maxMP;
@@ -148,6 +153,7 @@ public class GameMenu : MonoBehaviour
 
     public void ShowItems()
     {
+        PlayButtonSound();
         GameManager.instance.SortItems();
         for (int i = 0; i < itemButtons.Length; i++)
         {
@@ -210,13 +216,20 @@ public class GameMenu : MonoBehaviour
     }
     public void Save()
     {
+        PlayButtonSound();
         GameManager.instance.SaveData();
         QuestManager.instance.SaveQuestData();
     }
     public void Quit()
     {
+        PlayButtonSound();
         CloseMenu();
         //Cambiare in torna al menu
         Application.Quit();
+    }
+
+    public void PlayButtonSound()
+    {
+        AudioManager.instance.PlaySFX(5);
     }
 }

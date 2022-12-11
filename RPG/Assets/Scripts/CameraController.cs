@@ -14,6 +14,9 @@ public class CameraController : MonoBehaviour
     private float halfHeight;
     private float halfWidth;
 
+    public int musicToPlay;
+    private bool musicStarted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,5 +45,11 @@ public class CameraController : MonoBehaviour
     {
         //transform.position = new Vector3(subject.position.x, subject.position.y, transform.position.z);
         transform.position = new Vector3(Mathf.Clamp(subject.position.x, bottomLeft.x, topRight.x), Mathf.Clamp(subject.position.y, bottomLeft.y, topRight.y), transform.position.z);
+
+        if (!musicStarted)
+        {
+            musicStarted = true;
+            AudioManager.instance.PlayBGM(musicToPlay);
+        }
     }
 }

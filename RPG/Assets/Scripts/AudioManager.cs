@@ -31,11 +31,14 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayBGM(int musicToPlay)
     {
-        StopMusic();
-        if (musicToPlay < bgm.Length)
-            bgm[musicToPlay].Play();
-        else
-            Debug.Log("Music " + musicToPlay + " don't exist");
+        if (!bgm[musicToPlay].isPlaying)
+        {
+            StopMusic();
+            if (musicToPlay < bgm.Length)
+                bgm[musicToPlay].Play();
+            else
+                Debug.Log("Music " + musicToPlay + " don't exist");
+        }
     }
     public void StopMusic()
     {
