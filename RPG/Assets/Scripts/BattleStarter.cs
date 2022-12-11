@@ -13,6 +13,9 @@ public class BattleStarter : MonoBehaviour
     private float betweenBattleCounter;
     public bool deactivateAfterStart;
 
+    public bool shouldCompleteQuest;
+    public string questToComplete;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,6 +70,7 @@ public class BattleStarter : MonoBehaviour
         BattleManager.instance.rewardItems = battles[selectedBattle].items;
         BattleManager.instance.rewardXP = battles[selectedBattle].exp;
         BattleManager.instance.denyEscape = battles[selectedBattle].denyEscape;
+        BattleManager.instance.audioToPlay = battles[selectedBattle].audioToPlay;
 
         yield return new WaitForSeconds(1.5f);
         BattleManager.instance.BattleStart(battles[selectedBattle].enemies);
@@ -74,5 +78,8 @@ public class BattleStarter : MonoBehaviour
 
         if (deactivateAfterStart)
             gameObject.SetActive(false);
+
+        BattleReward.instance.markQuestComplete = shouldCompleteQuest;
+        BattleReward.instance.questToMark = questToComplete;
     }
 }

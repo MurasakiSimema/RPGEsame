@@ -9,4 +9,5 @@ public class BattleType
     public string[] enemies;
     public string[] items;
     public bool denyEscape;
+    public int audioToPlay = 0;
 }

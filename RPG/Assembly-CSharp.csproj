@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\CharStats.cs" />
     <Compile Include="Assets\Scripts\BattleChar.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\EssentialsLoader.cs" />
     <Compile Include="Assets\Scripts\ShopKeeper.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -90,7 +91,8 @@
     <Compile Include="Assets\Scripts\BattleNotification.cs" />
     <Compile Include="Assets\Scripts\FromArea.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\LoadingScene.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Udemy RPG Assets\Licence.txt" />

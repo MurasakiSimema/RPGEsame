@@ -241,11 +241,13 @@ MonoBehaviour:
     - Skeleton
     items:
     - Iron Sword
+    denyEscape: 0
   - exp: 200
     enemies:
     - Eyeball
     items:
     - Mana Potion
+    denyEscape: 0
   - exp: 700
     enemies:
     - Skeleton
@@ -256,10 +258,12 @@ MonoBehaviour:
     - Health Potion
     - Health Potion
     - Mana Potion
+    denyEscape: 0
   - exp: 5000
     enemies:
     - Boss1
     items: []
+    denyEscape: 0
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -3206,6 +3210,10 @@ PrefabInstance:
     - target: {fileID: 7241702837176159247, guid: 4b6f6034bff28a74d938e13c852aeed1, type: 3}
       propertyPath: subject
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241702837176159247, guid: 4b6f6034bff28a74d938e13c852aeed1, type: 3}
+      propertyPath: musicToPlay
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6f6034bff28a74d938e13c852aeed1, type: 3}

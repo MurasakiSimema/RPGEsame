@@ -42669,6 +42669,7 @@ MonoBehaviour:
   windows:
   - {fileID: 337639787}
   - {fileID: 415068837}
+  mainMenuName: MainMenu
   nameText:
   - {fileID: 892531496}
   - {fileID: 1956738506}

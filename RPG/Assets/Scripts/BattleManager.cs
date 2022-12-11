@@ -48,6 +48,7 @@ public class BattleManager : MonoBehaviour
     public int rewardXP;
     public string[] rewardItems;
     public bool denyEscape;
+    public int audioToPlay = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -87,6 +88,8 @@ public class BattleManager : MonoBehaviour
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
             battleScene.SetActive(true);
             statsMenu.SetActive(true);
+
+            AudioManager.instance.PlayBGM(audioToPlay);
 
             for (int i = 0; i < playerPosition.Length; i++)
             {

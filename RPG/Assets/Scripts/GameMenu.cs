@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameMenu : MonoBehaviour
 
     public GameObject menu;
     public GameObject[] windows;
+
+    public string mainMenuName;
 
     public Text[] nameText, hpText, mpText, lvlText, expTotText, expText;
     public Slider[] expSlider;
@@ -223,9 +226,12 @@ public class GameMenu : MonoBehaviour
     public void Quit()
     {
         PlayButtonSound();
-        CloseMenu();
-        //Cambiare in torna al menu
-        Application.Quit();
+
+        Destroy(GameManager.instance.gameObject);
+        Destroy(PlayerController.instance.gameObject);
+        Destroy(AudioManager.instance.gameObject);
+        Destroy(gameObject);
+        SceneManager.LoadScene(mainMenuName);
     }
 
     public void PlayButtonSound()
