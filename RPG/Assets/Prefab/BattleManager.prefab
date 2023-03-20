@@ -5050,7 +5050,7 @@ MonoBehaviour:
   - {fileID: 4560851428135996276, guid: e44c202aa09151546b67944fac198e17, type: 3}
   - {fileID: 5490302479467458029, guid: 707de09f93361f643ae05bdee09d53c1, type: 3}
   - {fileID: 1994835905109428836, guid: ee3756d6a597b6a4ca2f6aa643ab3e26, type: 3}
-  - {fileID: 1831972898425122762, guid: 6259acb9f25ea4449b96516ee576df0e, type: 3}
+  - {fileID: 505768142485317455, guid: c9ac7f7658cf0cf439e837cf4c1b66f7, type: 3}
   activeBattler: []
   currentTurn: 0
   turnWaiting: 0
@@ -5067,7 +5067,7 @@ MonoBehaviour:
     movePower: 150
     moveCost: 35
     effect: {fileID: 5044970273702196546, guid: 475206e246c4b5b44b5619c034e8f64a, type: 3}
-  - moveName: Snoze
+  - moveName: Snooze
     movePower: 0
     moveCost: 0
     effect: {fileID: 7561136744127597782, guid: b5b808c324e557b409bd081a4637ce63, type: 3}
@@ -5144,6 +5144,8 @@ MonoBehaviour:
   gameOverScene: GameOver
   rewardXP: 0
   rewardItems: []
+  denyEscape: 0
+  audioToPlay: 0
 --- !u!1 &2911957509226066140
 GameObject:
   m_ObjectHideFlags: 0

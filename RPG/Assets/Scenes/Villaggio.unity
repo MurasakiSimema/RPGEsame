@@ -11697,7 +11697,7 @@ PrefabInstance:
     - target: {fileID: 2911957509220902454, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
       propertyPath: enemyPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 1831972898425122762, guid: 6259acb9f25ea4449b96516ee576df0e, type: 3}
+      objectReference: {fileID: 505768142485317455, guid: c9ac7f7658cf0cf439e837cf4c1b66f7, type: 3}
     - target: {fileID: 2911957509220902454, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
       propertyPath: enemyPrefabs.Array.data[1]
       value: 
@@ -11709,6 +11709,10 @@ PrefabInstance:
     - target: {fileID: 2911957509220902454, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
       propertyPath: enemyPrefabs.Array.data[3]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911957509220902454, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
+      propertyPath: moves.Array.data[3].moveName
+      value: Snooze
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 238f1b1ba74b38749aa4a3c3cccd4c75, type: 3}
@@ -13138,7 +13142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1829143300714253017, guid: b5ff040d6178d584fa0bfa58dabc51bf, type: 3}
       propertyPath: m_Name
-      value: Boss
+      value: Boss1 Activator
       objectReference: {fileID: 0}
     - target: {fileID: 1829143300714253017, guid: b5ff040d6178d584fa0bfa58dabc51bf, type: 3}
       propertyPath: m_IsActive
